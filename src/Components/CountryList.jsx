@@ -19,7 +19,7 @@ function CountryList() {
     if (!accumulator.map((el) => el.country).includes(current.country))
       return [
         ...accumulator,
-        { country: current.country, emoji: current.emoji },
+        { country: current.country, flag: current.flag },
       ];
     else return accumulator;
   }, []);

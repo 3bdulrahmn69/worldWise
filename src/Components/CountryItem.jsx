@@ -4,14 +4,14 @@ import styles from './CountryItem.module.css';
 function CountryItem({ country }) {
   return (
     <li className={styles.countryItem}>
-      <span>{country.emoji}</span>
+      <span className={country.flag}></span>
       <span>{country.country}</span>
     </li>
   );
 }
 
 CountryItem.propTypes = {
-  country: PropTypes.array,
+  country: PropTypes.object,
 };
 
 export default CountryItem;

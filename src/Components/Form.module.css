@@ -25,6 +25,18 @@
   right: 1rem;
   top: 2.7rem;
   font-size: 2.8rem;
+  animation: fadeIn 0.5s ease;
+  -webkit-animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    right: 0.2rem;
+  }
+  to {
+    opacity: 1;
+    right: 1rem;
+  }
 }
 
 .form.loading {
@@ -41,4 +53,15 @@
 :global(.react-datepicker) {
   font-family: inherit;
   font-size: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countryName {
+  font-size: 1.4rem;
+  font-weight: 500;
 }

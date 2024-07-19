@@ -14,8 +14,15 @@
   align-items: center;
 }
 
-.product img {
+.img {
   width: 100%;
+  background-color: #ffffff;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .product h2 {

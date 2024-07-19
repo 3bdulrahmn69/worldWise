@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {
   MapContainer,
   TileLayer,
@@ -14,6 +14,7 @@ import { useGeolocation } from '../Hooks/useGeolocation';
 
 import Button from './Button';
 import styles from './Map.module.css';
+import { useUrlPosition } from '../Hooks/useUrlPosition';
 
 function Map() {
   const navigate = useNavigate();
@@ -21,16 +22,12 @@ function Map() {
   const [mapPosition, setMapPosition] = useState([
     38.727881642324164, -9.140900099907554,
   ]);
-  const [searchParams] = useSearchParams();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
-
-  // const { lat, lng } = Object.fromEntries(searchParams);
-  const mapLat = searchParams.get('lat');
-  const mapLng = searchParams.get('lng');
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
     if (mapLat && mapLng) {
@@ -90,7 +87,7 @@ function Map() {
 
 function ChangeCenter({ position }) {
   const map = useMap();
-  map.setView(position, 13);
+  map.setView(position, map.getZoom());
 
   return null;
 }
