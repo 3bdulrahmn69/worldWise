@@ -11,10 +11,9 @@ import {
 import { useEffect, useState } from 'react';
 import { useCities } from '../Contexts/CitiesContext';
 import { useGeolocation } from '../Hooks/useGeolocation';
-
+import { useUrlPosition } from '../Hooks/useUrlPosition';
 import Button from './Button';
 import styles from './Map.module.css';
-import { useUrlPosition } from '../Hooks/useUrlPosition';
 
 function Map() {
   const navigate = useNavigate();

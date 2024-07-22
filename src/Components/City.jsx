@@ -23,7 +23,7 @@ function City() {
 
   useEffect(() => {
     getCityById(id);
-  }, [id]);
+  }, [id, getCityById]);
 
   const { cityName, flag, date, notes } = currentCity;
 

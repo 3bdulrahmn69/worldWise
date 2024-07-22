@@ -1,7 +1,9 @@
+import styles from './PageNotFound.module.css';
+
 export default function PageNotFound() {
   return (
-    <div>
+    <section className={styles.not}>
       <h1>Page not found 😢</h1>
-    </div>
+    </section>
   );
 }

@@ -1,0 +1,21 @@
+.not {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5rem);
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-dark--1);
+  margin: 2.5rem;
+  padding: 0;
+}
+
+.not h1 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}

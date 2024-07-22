@@ -39,3 +39,26 @@
 .product section a {
   margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+  .product {
+    padding: 2.5rem;
+    margin: 1rem;
+  }
+
+  .product section {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .product h2 {
+    font-size: 3rem;
+    width: fit-content;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+    text-wrap: wrap;
+  }
+}
