@@ -34,10 +34,10 @@ const AuthProvider = ({ children }) => {
   );
 
   const FAKE_USER = {
-    name: 'Abdulrahman',
-    email: '3bdulrahmn@example.com',
+    name: 'guest',
+    email: 'guest@example.com',
     password: '123456',
-    avatar: 'https://i.pravatar.cc/100?img=6',
+    avatar: 'https://i.pravatar.cc/100',
   };
 
   function login(email, password) {
