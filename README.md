@@ -20,6 +20,10 @@ WorldWise is a web application designed to help you track your travels around th
    - **Cities:** Shows the cities you have visited.
    - **Countries:** Shows the countries you have visited.
 
+## Demo
+
+![WorldWise Demo](./public/WorldWise.webp)
+
 ## Technologies Used
 
 - **Frontend:**
